@@ -7,10 +7,11 @@
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:allowBackup="false">
 
         <receiver
-            android:name=".WeatherReceiver"
+            android:name=".DeviceBootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -18,20 +19,19 @@
             </intent-filter>
         </receiver>
 
-        <service
-            android:name=".WeatherService"
+        <receiver
+            android:name=".AlarmReceiver"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="true"/>
 
         <activity
             android:name=".EmptyActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
