@@ -1,4 +1,4 @@
-package com.michael.brooke.raincheck
+package com.michael.brooke.raincheck.ui
 
 import android.app.Activity
 import android.os.Bundle

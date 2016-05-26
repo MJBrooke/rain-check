@@ -11,7 +11,7 @@
         android:allowBackup="false">
 
         <receiver
-            android:name=".DeviceBootReceiver"
+            android:name=".broadcast.receiver.DeviceBootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -20,12 +20,12 @@
         </receiver>
 
         <receiver
-            android:name=".AlarmReceiver"
+            android:name=".broadcast.receiver.AlarmReceiver"
             android:enabled="true"
             android:exported="true"/>
 
         <activity
-            android:name=".EmptyActivity"
+            android:name=".ui.EmptyActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

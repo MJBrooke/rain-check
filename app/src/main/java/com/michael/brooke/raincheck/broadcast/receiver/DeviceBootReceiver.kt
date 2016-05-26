@@ -1,4 +1,4 @@
-package com.michael.brooke.raincheck
+package com.michael.brooke.raincheck.broadcast.receiver
 
 import android.app.AlarmManager
 import android.app.PendingIntent
